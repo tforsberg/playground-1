@@ -1,2 +1,2 @@
 # playground
-Project for just learning to use GitHub
+Project for learning to use GitHub
