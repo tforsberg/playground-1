@@ -1,0 +1,23 @@
+<h1>
+  Wijmo Angular Application
+</h1>
+<p>
+  Try editing or sorting the data on the grid and see the
+  result on the chart.
+</p>
+<div class="App-panel">
+  <wj-flex-grid [itemsSource]="data">
+    <wj-flex-grid-column [binding]="'country'" [header]="'Country'"></wj-flex-grid-column>
+    <wj-flex-grid-column [binding]="'sales'" [header]="'Sales'"></wj-flex-grid-column>
+    <wj-flex-grid-column [binding]="'expenses'" [header]="'Expenses'"></wj-flex-grid-column>
+    <wj-flex-grid-column [binding]="'downloads'" [header]="'Downloads'"></wj-flex-grid-column>
+  </wj-flex-grid>
+  <wj-flex-chart [itemsSource]="data" [bindingX]="'country'">
+    <wj-flex-chart-series [binding]="'sales'" [name]="'Sales'">
+    </wj-flex-chart-series>
+    <wj-flex-chart-series [binding]="'expenses'" [name]="'Expenses'">
+    </wj-flex-chart-series>
+    <wj-flex-chart-series [binding]="'downloads'" [name]="'Downloads'">
+    </wj-flex-chart-series>
+  </wj-flex-chart>
+</div>

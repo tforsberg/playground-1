@@ -1,0 +1,16 @@
+@import "wijmo/styles/themes/wijmo.theme.material.css";
+
+body {
+  font-family: Lato, Arial
+}
+.App-panel {
+    margin: 0 48pt;
+    text-align: center;
+  }
+    .App-panel .wj-control {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      width: 400px;
+      max-height: 400px;
+    }
